@@ -33,18 +33,17 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            I go to Northeastern University and study Computer Science
+            with a concentration in software. I am currently looking
+            for any internship opportunities for Spring and Summer 2023 term.
           </p>
           <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            I'm quiet confident and naturally curious. I am always looking for 
+            ways to challenge myself and learn the latest technologies.
           </p>
           <p>
             If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            person, a sports fanatic, and a marvel enthusiast!! 
           </p>
         </div>
 

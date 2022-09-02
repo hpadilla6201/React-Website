@@ -11,11 +11,16 @@ const Home = () => {
 
   const nameArray = ['e', 'c', 't', 'o', 'r']
   const jobArray = [
+    'S',
+    'o',
+    'f',
+    't',
     'w',
+    'a',
+    'r',
     'e',
-    'b',
     ' ',
-    'd',
+    'D',
     'e',
     'v',
     'e',
@@ -61,8 +66,7 @@ const Home = () => {
           </h1>
           <h2>Student at Northeastern / Developer</h2>
 
-          <a href="../../assets/files/Hector Padilla- Resume.pdf" download="Hector-Padilla-Resume" className="flat-button">MY RESUME</a>
-          
+          <a href={require('../../assets/HectorPadilla-Resume.pdf')} rel="noreferrer" target="_blank" download="Hector-Padilla-Resume" className="flat-button">MY RESUME</a>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>  
