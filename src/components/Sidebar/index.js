@@ -1,5 +1,5 @@
 import './index.scss'
-import LogH from '../../assets/images/hec.png'
+import SpidermanLogo from '../../assets/images/spiderman.png'
 import LogoSubtitle from '../../assets/images/hector_logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -17,7 +17,7 @@ const Sidebar = () => {
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
-        <img src={LogH} alt="Logo" />
+        <img src={SpidermanLogo} alt="Logo" />
         <img className="sub-logo" src={LogoSubtitle} alt="padilla" />
       </Link>
       <nav>
