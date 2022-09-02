@@ -8,6 +8,7 @@ import {
   faYoutube,
   faTwitter,
   faTiktok,
+  faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
@@ -70,6 +71,11 @@ const Sidebar = () => {
         <li>
           <a href="https://www.tiktok.com/@hectorhoncho?is_from_webapp=1&sender_device=pc" rel="noreferrer" target="_blank">
             <FontAwesomeIcon icon={faTiktok} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/hectorhoncho/" rel="noreferrer" target="_blank">
+            <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
           </a>
         </li>
       </ul>
