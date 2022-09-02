@@ -10,30 +10,51 @@ import {
   faTiktok,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
-import { faHome, faUser, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faBars, faClose} from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
+import { useState } from 'react'
 
 const Sidebar = () => {
+  const [showNav, setShowNav] = useState(false);
+
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/">
+      <Link 
+        className="logo"
+        to="/"
+        onClick={() => setShowNav(false)}>
         <img src={SpidermanLogo} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="padilla" />
+        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
       </Link>
-      <nav>
-        <NavLink exact="true" activeclassname="active" to="/">
+      <nav className={showNav ? 'mobile-show' : ''}>
+        <NavLink 
+          exact="true"
+          activeclassname="active"
+          to="/"
+          onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
-        <NavLink activeclassname="active" className="about-link" to="/about">
+        <NavLink 
+          activeclassname="active"
+          className="about-link"
+          to="/about"
+          onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
         <NavLink
           activeclassname="active"
           className="contact-link"
           to="/contact"
+          onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+        <FontAwesomeIcon 
+          onClick={() => setShowNav(false)}
+          icon={faClose}
+          color="#ffd700"
+          size="3x"
+          className='close-icon' />
       </nav>
       <ul>
         <li>
@@ -42,7 +63,11 @@ const Sidebar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
           </a>
         </li>
         <li>
@@ -51,34 +76,60 @@ const Sidebar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+            <FontAwesomeIcon
+              icon={faGithub}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
           </a>
         </li>
         <li>
           <a
-            href="https://www.youtube.com/channel/UCAGdHybeowF4EXjrdk5AhTg"
+            href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
             rel="noreferrer"
             target="_blank"
           >
-            <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+            <FontAwesomeIcon
+              icon={faYoutube}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
           </a>
         </li>
         <li>
           <a href="https://twitter.com/HectorHoncho" rel="noreferrer" target="_blank">
-            <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
+            <FontAwesomeIcon
+              icon={faTwitter}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
           </a>
         </li>
         <li>
           <a href="https://www.tiktok.com/@hectorhoncho?is_from_webapp=1&sender_device=pc" rel="noreferrer" target="_blank">
-            <FontAwesomeIcon icon={faTiktok} color="#4d4d4e" />
+            <FontAwesomeIcon
+              icon={faTiktok}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/hectorhoncho/" rel="noreferrer" target="_blank">
-            <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
+            <FontAwesomeIcon
+              icon={faInstagram}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
           </a>
         </li>
       </ul>
+      <FontAwesomeIcon 
+          onClick={() => setShowNav(true)}
+          icon={faBars}
+          color="#00000"
+          size="3x"
+          className='hamburger-icon' />
     </div>
   )
 }

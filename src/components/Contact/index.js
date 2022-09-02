@@ -46,7 +46,7 @@ const Contact = () => {
           <p>
             I am interested in software development opportunities - specifically
             intern and entry level roles. Please feel free to reach out for
-            any other related opportunities or any other requests using the for below!
+            any other related opportunities or requests using the form below!
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
