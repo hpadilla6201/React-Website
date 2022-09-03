@@ -85,7 +85,7 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
+            href="https://www.youtube.com/channel/UCAGdHybeowF4EXjrdk5AhTg"
             rel="noreferrer"
             target="_blank"
           >
