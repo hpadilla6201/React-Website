@@ -19,6 +19,7 @@
 .env.production.local
 .deploy.sh
 .prettierrc
+.deploy.sh
 
 npm-debug.log*
 yarn-debug.log*

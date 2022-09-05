@@ -1,5 +1,5 @@
 .nav-bar {
-  background: #181818;
+  background: #000000;
   width: 60px;
   height: 100%;
   position: absolute;
@@ -34,7 +34,7 @@
 
     a {
       font-size: 22px;
-      color: #4d4d4e;
+      color: #ffff;
       display: block;
       line-height: 51px;
       height: 51px;
@@ -90,6 +90,48 @@
       }
     }
 
+    a.linkedin-link {
+      display: none;
+      &:after {
+        content: 'LINKEDIN';
+      }
+    }
+
+    a.github-link {
+      display: none;
+      &:after {
+        content: 'GITHUB';
+      }
+    }
+
+    a.youtube-link {
+      display: none;
+      &:after {
+        content: 'YOUTUBE';
+      }
+    }
+
+    a.twitter-link {
+      display: none;
+      &:after {
+        content: 'TWITTER';
+      }
+    }
+
+    a.instagram-link {
+      display: none;
+      &:after {
+        content: 'INSTAGRAM';
+      }
+    }
+
+    a.tiktok-link {
+      display: none;
+      &:after {
+        content: 'TIKTOK';
+      }
+    }
+
     a.active {
       svg {
         color: #ffff;
@@ -113,7 +155,7 @@
         display: block;
         font-size: 15px;
         line-height: 16px;
-        color: #4d4d4e;
+        color: #000000;
       }
 
       &:hover {
@@ -166,6 +208,48 @@
         position: initial;
         width: auto;
         margin-left: 10PX;
+      }
+
+      a.linkedin-link {
+        display: flex;
+        &:after {
+          content: 'LINKEDIN';
+        }
+      }
+
+      a.github-link {
+        display: flex;
+        &:after {
+          content: 'GITHUB';
+        }
+      }
+
+      a.youtube-link {
+        display: flex;
+        &:after {
+          content: 'YOUTUBE';
+        }
+      }
+
+      a.twitter-link {
+        display: flex;
+        &:after {
+          content: 'TWITTER';
+        }
+      }
+
+      a.instagram-link {
+        display: flex;
+        &:after {
+          content: 'INSTAGRAM';
+        }
+      }
+
+      a.tiktok-link {
+        display: flex;
+        &:after {
+          content: 'TIKTOK';
+        }
       }
 
       a svg {

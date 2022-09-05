@@ -49,6 +49,90 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+        <a
+            className="linkedin-link"
+            href="https://www.linkedin.com/in/hectorpadilla6201/"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setShowNav(false)}
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              color="#4d4d4e"
+              className="anchor-icon 1x"
+              onClick={() => setShowNav(false)}
+            />
+          </a>
+          <a
+            className="github-link"
+            href="https://github.com/hpadilla6201"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setShowNav(false)}
+          >
+            <FontAwesomeIcon
+              icon={faGithub}
+              color="#4d4d4e"
+              className="anchor-icon 1x"
+              onClick={() => setShowNav(false)}
+            />
+          </a>
+          <a
+            className="youtube-link"
+            href="https://www.youtube.com/channel/UCAGdHybeowF4EXjrdk5AhTg"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setShowNav(false)}
+          >
+            <FontAwesomeIcon
+              icon={faYoutube}
+              color="#4d4d4e"
+              className="anchor-icon 1x"
+              onClick={() => setShowNav(false)}
+            />
+          </a>
+          <a
+            className="twitter-link"
+            href="https://twitter.com/HectorHoncho"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setShowNav(false)}
+          >
+            <FontAwesomeIcon
+              icon={faTwitter}
+              color="#4d4d4e"
+              className="anchor-icon 1x"
+              onClick={() => setShowNav(false)}
+            />
+          </a>
+          <a
+            className="tiktok-link"
+            href="https://www.tiktok.com/@hectorhoncho?is_from_webapp=1&sender_device=pc"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setShowNav(false)}
+          >
+            <FontAwesomeIcon
+              icon={faTiktok}
+              color="#4d4d4e"
+              className="anchor-icon 1x"
+              onClick={() => setShowNav(false)}
+            />
+          </a>
+          <a
+            className="instagram-link"
+            href="https://www.instagram.com/hectorhoncho/"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setShowNav(false)}
+          >
+            <FontAwesomeIcon
+              icon={faInstagram}
+              color="#4d4d4e"
+              className="anchor-icon 1x"
+              onClick={() => setShowNav(false)}
+            />
+          </a>
         <FontAwesomeIcon 
           onClick={() => setShowNav(false)}
           icon={faClose}
