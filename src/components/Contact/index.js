@@ -52,7 +52,7 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
+                  <input placeholder="Name" type="text" name="from_name" required />
                 </li>
                 <li className="half">
                   <input

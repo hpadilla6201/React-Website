@@ -1,5 +1,5 @@
 .nav-bar {
-  background: #181818;
+  background: #000000;
   width: 60px;
   height: 100%;
   position: absolute;
@@ -34,7 +34,7 @@
 
     a {
       font-size: 22px;
-      color: #4d4d4e;
+      color: #ffff;
       display: block;
       line-height: 51px;
       height: 51px;
@@ -90,6 +90,13 @@
       }
     }
 
+    a.socials-link {
+      display: none;
+      &:after {
+        content: 'SOCIALS';
+      }
+    }
+
     a.active {
       svg {
         color: #ffff;
@@ -113,7 +120,7 @@
         display: block;
         font-size: 15px;
         line-height: 16px;
-        color: #4d4d4e;
+        color: #000000;
       }
 
       &:hover {
@@ -166,6 +173,13 @@
         position: initial;
         width: auto;
         margin-left: 10PX;
+      }
+
+      a.socials-link {
+        display: flex;
+        &:after {
+          content: 'SOCIALS';
+        }
       }
 
       a svg {

@@ -1,0 +1,117 @@
+.socials-page {
+    .text-zone {
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40%;
+      max-height: 90%;
+    }
+
+    .img {
+        border-radius: 50%;
+    }
+  
+    h1 {
+      color: #fff;
+      font-size: 56px;
+      line-height: 53px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+  
+      &:before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #000000;
+        font-size: 24px;
+        position: absolute;
+        margin-top: -40px;
+        left: -15px;
+        opacity: 0.6;
+      }
+  
+      &:after {
+        content: '<h1/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #000000;
+        font-size: 24px;
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 20px;
+        animation: fadeIn 1s 1.7s backwards;
+        opacity: 0.6;
+      }
+  
+      img {
+        margin-left: 20px;
+        opacity: 0;
+        width: 32px;
+        height: auto;
+        animation: rotateIn 1s linear both;
+        animation-delay: 1.4s;
+      }
+    }
+  
+    h2 {
+      color: #000000;
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 14px;
+      font-family: sans-serif;
+      letter-spacing: 3px;
+      animation: fadeIn 1s 1.8s backwards;
+    }
+  
+    ul {
+        display: none;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .tags {
+      display: none;
+    }
+
+    .container {
+        position: initial;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .socials-page .text-zone {
+        flex: 1;
+        position: unset;
+        left: unset;
+        top: unset;
+        transform: unset;
+        width: unset;
+        max-height: unset;
+    }
+
+    .socials-page ul {
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        flex: 1;
+    }
+
+    .socials-page h1{
+        font-size: 56px;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+    .socials-page img {
+        border-radius: 50%;
+        width:200px;
+        height: 175px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+  

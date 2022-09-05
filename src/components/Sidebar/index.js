@@ -10,7 +10,7 @@ import {
   faTiktok,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
-import { faHome, faUser, faEnvelope, faBars, faClose} from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faBars, faClose, faPaperclip} from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
 
@@ -24,7 +24,7 @@ const Sidebar = () => {
         to="/"
         onClick={() => setShowNav(false)}>
         <img src={SpidermanLogo} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+        <img className="sub-logo" src={LogoSubtitle} alt="hector" />
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink 
@@ -49,6 +49,30 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+        <NavLink
+          activeclassname="active"
+          className="socials-link"
+          to="/socials"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faPaperclip} color="#4d4d4e" />
+        </NavLink>
+        <a
+            activeclassname="active"
+            className="socials-link"
+            href="https://www.linkedin.com/in/hectorpadilla6201/"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setShowNav(false)}
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              color="#ffff"
+              className="anchor-icon fa-1x"
+            />
+          </a>
+
+
         <FontAwesomeIcon 
           onClick={() => setShowNav(false)}
           icon={faClose}
@@ -127,7 +151,7 @@ const Sidebar = () => {
       <FontAwesomeIcon 
           onClick={() => setShowNav(true)}
           icon={faBars}
-          color="#00000"
+          color="#000000"
           size="3x"
           className='hamburger-icon' />
     </div>

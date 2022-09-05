@@ -40,7 +40,7 @@
 
 .container.contact-page,
 .container.about-page,
-.container.portfolio-page {
+.container.socials-page {
   
     h1 {
       font-size: 53px;
@@ -122,11 +122,10 @@
   .container {
     position: initial;
     height: auto;
-    min-height: auto;
 
     &.contact-page,
     &.about-page,
-    &.portfolio-page {
+    &.socials-page {
       .text-zone {
         position: initial;
         transform: none;
