@@ -9,6 +9,7 @@ import {
   faTwitter,
   faTiktok,
   faInstagram,
+  faPaypal,
 } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faEnvelope, faBars, faClose} from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
@@ -133,6 +134,20 @@ const Sidebar = () => {
               onClick={() => setShowNav(false)}
             />
           </a>
+          <a
+            className="paypal-link"
+            href="https://paypal.me/hpadilla6201?country.x=US&locale.x=en_US"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setShowNav(false)}
+          >
+            <FontAwesomeIcon
+              icon={faPaypal}
+              color="#4d4d4e"
+              className="anchor-icon 1x"
+              onClick={() => setShowNav(false)}
+            />
+          </a>
         <FontAwesomeIcon 
           onClick={() => setShowNav(false)}
           icon={faClose}
@@ -202,6 +217,15 @@ const Sidebar = () => {
           <a href="https://www.instagram.com/hectorhoncho/" rel="noreferrer" target="_blank">
             <FontAwesomeIcon
               icon={faInstagram}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://paypal.me/hpadilla6201?country.x=US&locale.x=en_US" rel="noreferrer" target="_blank">
+            <FontAwesomeIcon
+              icon={faPaypal}
               color="#4d4d4e"
               className="anchor-icon"
             />

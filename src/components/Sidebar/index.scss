@@ -132,6 +132,13 @@
       }
     }
 
+    a.paypal-link {
+      display: none;
+      &:after {
+        content: 'PAYPAL';
+      }
+    }
+
     a.active {
       svg {
         color: #ffff;
@@ -249,6 +256,13 @@
         display: flex;
         &:after {
           content: 'TIKTOK';
+        }
+      }
+
+      a.paypal-link {
+        display: flex;
+        &:after {
+          content: 'PAYPAL';
         }
       }
 
