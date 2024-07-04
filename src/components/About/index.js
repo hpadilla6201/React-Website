@@ -33,9 +33,9 @@ const About = () => {
             />
           </h1>
           <p>
-            I am currently a software development engineer at Amazon. I am
-            graduate from Northeastern University with a bahelor's degree in
-            Computer Science and concentration in software.
+            I am a graduate from Northeastern University with a bahelor's degree
+            in Computer Science and concentration in software. I currently work
+            at Amazon as a software development engineer.
           </p>
           <p align="LEFT">
             I have experience in developing applications using Java, TypeScript,

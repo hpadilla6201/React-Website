@@ -58,7 +58,7 @@ const Home = () => {
               idx={17}
             />
           </h1>
-          <h2>SDE @ Amazon / Northeastern University Graduate</h2>
+          <h2>SDE @ Amazon / Northeastern Graduate</h2>
 
           <a
             href={require('../../assets/HectorPadilla-Resume-June2024.pdf')}
