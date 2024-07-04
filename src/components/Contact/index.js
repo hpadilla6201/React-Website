@@ -50,8 +50,8 @@ const Contact = () => {
           </h1>
           <p>
             I am interested in software development opportunities. Please feel
-            free to reach out for any other related opportunities or just want
-            to chat!
+            free to reach out for any other related opportunities or if you just
+            want to chat!
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
