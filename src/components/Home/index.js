@@ -5,9 +5,9 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState('text-animate');
+  const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = [' ','H','e', 'c', 't', 'o', 'r']
+  const nameArray = [' ', 'H', 'e', 'c', 't', 'o', 'r']
   const jobArray = [
     'S',
     'o',
@@ -58,14 +58,22 @@ const Home = () => {
               idx={17}
             />
           </h1>
-          <h2>Student at Northeastern / Developer</h2>
+          <h2>SDE @ Amazon / Northeastern University Graduate</h2>
 
-          <a href={require('../../assets/HectorPadilla-Resume.pdf')} rel="noreferrer" target="_blank" download="Hector-Padilla-Resume" className="flat-button">MY RESUME</a>
+          <a
+            href={require('../../assets/HectorPadilla-Resume-June2024.pdf')}
+            rel="noreferrer"
+            target="_blank"
+            download="Hector-Padilla-Resume"
+            className="flat-button"
+          >
+            MY RESUME
+          </a>
           <Link to="/contact" className="flat-button">
             CONTACT ME
-          </Link>  
+          </Link>
         </div>
-        </div>
+      </div>
       <Loader type="pacman" />
     </>
   )

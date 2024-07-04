@@ -33,17 +33,20 @@ const About = () => {
             />
           </h1>
           <p>
-            I go to Northeastern University and study Computer Science
-            with a concentration in software. I am currently looking
-            for any internship opportunities for Spring and Summer 2023 term.
+            I am currently a software development engineer at Amazon. I am
+            graduate from Northeastern University with a bahelor's degree in
+            Computer Science and concentration in software.
           </p>
           <p align="LEFT">
-            I'm quiet confident and naturally curious. I am always looking for 
-            ways to challenge myself and learn the latest technologies.
+            I have experience in developing applications using Java, TypeScript,
+            JavaScript, C#, HTML, and CSS. I have also worked on various
+            projects that have given me a good understanding of software
+            development life-cycle.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, a sports fanatic, and a marvel enthusiast!! 
+            I'm quiet confident and naturally curious. I am always looking for
+            ways to challenge myself and learn the latest technologies. I love
+            playing soccer, reading books, and going for runs.
           </p>
         </div>
 

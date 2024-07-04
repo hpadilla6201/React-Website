@@ -20,7 +20,12 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('service_knxrh9t', 'template_7lf30rb', form.current, 'aKSHJVYntReqZiSd9')
+      .sendForm(
+        'service_knxrh9t',
+        'template_7lf30rb',
+        form.current,
+        'aKSHJVYntReqZiSd9'
+      )
       .then(
         () => {
           alert('Message successfully sent!')
@@ -44,9 +49,9 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in software development opportunities - specifically
-            intern and entry level roles. Please feel free to reach out for
-            any other related opportunities or requests using the form below!
+            I am interested in software development opportunities. Please feel
+            free to reach out for any other related opportunities or just want
+            to chat!
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -89,15 +94,15 @@ const Contact = () => {
           <br />
           United States,
           <br />
-          360 Huntington Ave, <br />
-          Boston, MA <br />
+          500 9th Ave N, <br />
+          Seattle, WA <br />
           <br />
           <span>hpadilla6201@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[42.3398, -71.0892]} zoom={13}>
+          <MapContainer center={[47.6239, -122.3394]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[42.3398, -71.0892]}>
+            <Marker position={[47.6239, -122.3394]}>
               <Popup>Hector resides here!</Popup>
             </Marker>
           </MapContainer>
