@@ -17,9 +17,8 @@
 .env.development.local
 .env.test.local
 .env.production.local
-.deploy.sh
+deploy.sh
 .prettierrc
-.deploy.sh
 
 npm-debug.log*
 yarn-debug.log*

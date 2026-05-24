@@ -1,4 +1,4 @@
-$primary-color: #ffd700;
+$primary-color: #ffffff;
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
@@ -47,4 +47,15 @@ textarea {
   height: 50px;
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
+}
+
+.loader-active .pacman > div:first-of-type,
+.loader-active .pacman > div:nth-child(2) {
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.loader-active .pacman > div:nth-child(n + 3) {
+  background-color: #ffffff;
 }

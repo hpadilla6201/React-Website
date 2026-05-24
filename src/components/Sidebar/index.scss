@@ -10,11 +10,28 @@
   .logo {
     display: block;
     padding: 8px 0;
+    text-decoration: none;
+
+    .logo-mark {
+      align-items: center;
+      background: #ffffff !important;
+      border-radius: 6px;
+      color: #000000;
+      display: flex;
+      font-family: 'Coolvetica', 'Helvetica Neue', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      height: 40px;
+      justify-content: center;
+      letter-spacing: 0;
+      line-height: 1;
+      margin: 8px auto;
+      width: 40px;
+    }
 
     img {
       display: block;
       margin: 8px auto;
-      width: 40px;
       height: auto;
 
       &.sub-logo {

@@ -1,5 +1,4 @@
 import './index.scss'
-import SpidermanLogo from '../../assets/images/spiderman.png'
 import LogoSubtitle from '../../assets/images/hector_logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -24,8 +23,8 @@ const Sidebar = () => {
         className="logo"
         to="/"
         onClick={() => setShowNav(false)}>
-        <img src={SpidermanLogo} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+        <span className="logo-mark" aria-label="Hector Padilla">HP</span>
+        <img className="sub-logo" src={LogoSubtitle} alt="Hector Padilla" />
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink 
