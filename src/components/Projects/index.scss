@@ -1,0 +1,143 @@
+.projects-page {
+  .text-zone {
+    width: 32%;
+  }
+
+  .projects-list {
+    animation: fadeInUp 1s 1.4s backwards;
+    display: grid;
+    gap: 20px;
+    left: 48%;
+    max-height: 75%;
+    overflow-y: auto;
+    padding-right: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42%;
+  }
+
+  .project-card {
+    background: #ffffff;
+    border-radius: 8px;
+    color: #181818;
+    display: grid;
+    grid-template-columns: 1fr 48px;
+    min-height: 230px;
+    overflow: hidden;
+  }
+
+  .project-card__content {
+    padding: 28px;
+  }
+
+  .project-card__type {
+    color: #555555;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 0 12px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: #000000;
+    font-family: 'Coolvetica', 'Helvetica Neue', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 14px;
+  }
+
+  .project-card p {
+    color: #333333;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 18px;
+  }
+
+  .project-card__stats,
+  .project-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .project-card__stats {
+    margin-bottom: 16px;
+
+    span {
+      border: 1px solid #d8d8d8;
+      border-radius: 999px;
+      color: #111111;
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+
+  .project-card__tags {
+    span {
+      background: #181818;
+      border-radius: 999px;
+      color: #ffffff;
+      font-size: 11px;
+      letter-spacing: 1px;
+      padding: 6px 10px;
+      text-transform: uppercase;
+    }
+  }
+
+  .project-card__link {
+    align-items: center;
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    text-decoration: none;
+
+    &:hover {
+      background: #ffffff;
+      color: #000000;
+      outline: 1px solid #000000;
+      outline-offset: -1px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container.projects-page {
+    padding: 20px;
+    box-sizing: border-box;
+
+    .text-zone {
+      position: initial;
+      transform: none;
+      width: 100%;
+      display: block;
+      padding: 0;
+    }
+
+    .projects-list {
+      max-height: none;
+      overflow-y: visible;
+      padding: 0;
+      position: initial;
+      transform: none;
+      width: 100%;
+    }
+
+    .project-card {
+      grid-template-columns: 1fr 54px;
+      min-height: auto;
+    }
+
+    .project-card__content {
+      padding: 22px;
+    }
+
+    h2 {
+      font-size: 29px;
+    }
+  }
+}

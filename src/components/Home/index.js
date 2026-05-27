@@ -59,16 +59,6 @@ const Home = () => {
             />
           </h1>
           <h2>SDE @ Amazon / Northeastern Graduate</h2>
-
-          <a
-            href={require('../../assets/HectorPadilla-Resume-June2024.pdf')}
-            rel="noreferrer"
-            target="_blank"
-            download="Hector-Padilla-Resume"
-            className="flat-button"
-          >
-            MY RESUME
-          </a>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>

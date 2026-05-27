@@ -107,6 +107,12 @@
       }
     }
 
+    a.projects-link {
+      &:after {
+        content: 'PROJECTS';
+      }
+    }
+
     a.linkedin-link {
       display: none;
       &:after {
